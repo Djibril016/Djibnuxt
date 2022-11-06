@@ -150,7 +150,7 @@ export default{
         width: 100%;
         top: 0vw;
         transition: transform 0.5s ease-out;
-        right: 12vw;
+        right: 1vw;
         z-index: 1;
     }
     .contenu-resp{
@@ -223,7 +223,6 @@ export default{
         .langue{
             background: rgb(9, 73, 170);
             border-radius: 0.3vw;
-            /* padding: 0.3vw 0.6vw; */
             padding-top: 0.8vw;
             padding-right: 0.8vw;
             padding-left: 0.8vw;

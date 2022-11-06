@@ -42,6 +42,9 @@ import Formexpen from './Formexpen.vue';
      #formation-offset{
     padding: 3vw;
   }
+  .expe{
+      overflow-x: hidden;
+    }
     .div-conteneur{
       padding-top: 16.7%;
     }

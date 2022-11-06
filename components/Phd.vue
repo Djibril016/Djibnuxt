@@ -51,9 +51,9 @@
   <script>
 import Reseau from './Reseau.vue';
 import Resmobile from './Resmobile.vue';
-// import Mixins from '../pages/Mixins.vue'
+import Mixins from '../pages/Mixins.vue'
 export default{
-  // mixins: [Mixins],
+  mixins: [Mixins],
     name: "Phd",
     props:["qsjlink"],
     components: { Reseau, Resmobile }
@@ -155,11 +155,12 @@ export default{
  @media screen and (max-width:768px) {
   
   #section0{ 
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }  
   .degr{
         flex-direction: column;
         width: 100%;
+        margin-top: 0vw;
         margin-left: -1vw;
         background: rgba(2, 56, 137, 1);
       }
@@ -168,7 +169,7 @@ export default{
       width: 100%;
       position: absolute;
       margin-left: -1.7vw;
-      margin-top: 3vw;
+      margin-top: 11vw;
      
      
       }

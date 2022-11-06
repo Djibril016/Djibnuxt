@@ -36,8 +36,12 @@
                       call="width:2.8vw;height:2.3vw;margin-left:1.3vw"
                       numcol="color:rgba(2, 56, 137, 1);margin-left:1vw;font-size:1.8vw;font-weight: 600;font-family:Roboto,sans-serif"
                       />
-                      <Resmobile class="resmob"/>
+                     
                     </div>
+                    <div class="resmob">
+                      <Resmobile />
+                    </div >
+                    
                 </div>
       </div>
 
@@ -47,7 +51,6 @@
 </template>
 
 <script>
-// import emailjs from 'emailjs-com';
 import Reseau from './Reseau.vue';
 import Cardtitle from './Cardtitle.vue';
 import Resmobile from './Resmobile.vue';
@@ -84,21 +87,6 @@ import Resmobile from './Resmobile.vue';
             }, 1500)
         }
 
-
-    // send(instance ) {
-    //   console.log(instance);
-    //   alert('vous allez etre rediriger vers la boite mail')
-    //   setTimeout(() => {
-    //     instance.nom= ''
-    //     instance.objet= ''
-    //     instance.message= ''
-    //   }, 1500);
-    //   this.$mail.send({
-    //     from:this.email,
-    //     subject: 'Contact form message',
-    //     text: this.message,
-    //   })
-    // }
   }
  
     }

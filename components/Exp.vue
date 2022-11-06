@@ -38,6 +38,9 @@
      #formation-offset{
     padding: 3vw;
     }
+    .expe{
+      overflow-x: hidden;
+    }
     .div-conteneur{
       padding-top: 16.7%;
     }
@@ -45,6 +48,7 @@
       margin-left: 58vw;
       margin-top: -12.5vw;
       position: absolute;
+      overflow-x: hidden;
     }
     .exp-lum img{
       height: 100%;

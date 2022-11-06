@@ -6,7 +6,7 @@ export default {
     name:"Mixins",
   mounted() {
     AOS.init({ 
-      disable: 'mobile'
+      // disable: 'mobile'
     })
   }
 }

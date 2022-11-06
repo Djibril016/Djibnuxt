@@ -3,7 +3,7 @@
   
    <div class="degr row">
   
-      <div data-aos="fade-left" data-aos-duration="2000" class="text-part">
+      <div data-aos="fade-right" data-aos-duration="2000" class="text-part">
         <p class="titre-occ">
           Hydrologist and Expert in natural resources, infrastructure and sustainable development 
         </p>
@@ -49,9 +49,9 @@
   <script>
 import Reseau from './Reseau.vue';
 import Resmobile from './Resmobile.vue';
-// import Mixins from '../pages/Mixins.vue'
+import Mixins from '../pages/Mixins.vue'
 export default{
-    // mixins: [Mixins],
+    mixins: [Mixins],
     name: "Phd",
     props:["qsjlink"],
     components: { Reseau, Resmobile }
@@ -160,6 +160,7 @@ export default{
   .degr{
         flex-direction: column;
         width: 100%;
+        margin-top: 0vw;
         margin-left: -1vw;
         background: rgba(2, 56, 137, 1);
       }
@@ -168,7 +169,7 @@ export default{
       width: 100%;
       position: absolute;
       margin-left: -1.7vw;
-      margin-top: 3vw;
+      margin-top:11vw;
      
      
       }
