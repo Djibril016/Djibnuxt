@@ -1,14 +1,15 @@
 <template>
-    <section id="distinctions">
-         <div class="col-12 col-md-12 col-lg-12 contex ">
-         <TitreRubriq rubrique="HONORS"/>
+    <div id="distinctions">
+         <div class=" contex ">
+            <!-- col-12 col-md-12 col-lg-12 -->
+         <TitreRubriq data-aos="fade-right" data-aos-duration="2000" rubrique="DISTINCTIONS" />
      </div>
      <div v-for="(type, index) in typemedaille" :key="index"
 
       class="div-medaille">
-        <img src="../assets/Trophet.png" alt="parcours Zannou">
+        <img data-aos="fade-up" data-aos-duration="2000" src="../assets/Trophet.png" alt="parcours Zannou">
         <div>
-            <div class="nom-prix">
+            <div data-aos="flip-down" data-aos-duration="2000" class="nom-prix">
                 {{type.nom}}  
                 <span class="annees"><i> ( {{type.annee}} )</i> </span>
                
@@ -19,7 +20,7 @@
         </div>
 
      </div>
-    </section>
+    </div>
      
 </template>
 
@@ -64,12 +65,13 @@
 <style>
 #distinctions{
     width: auto;
+    color:  rgba(1, 52, 128, 1);;
 }
 .div-medaille{
     display: flex;
     flex-direction: row;
     margin-left: 11vw;
-    margin-top: 3.3vw;
+    margin-top: 2.5vw;
 }
 .div-medaille img{
     height: 3.5vw;

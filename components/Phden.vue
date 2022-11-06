@@ -3,7 +3,7 @@
   
    <div class="degr row">
   
-      <div class="col-12 col-lg-6 col-md-6  text-part">
+      <div data-aos="fade-left" data-aos-duration="2000" class="text-part">
         <p class="titre-occ">
           Hydrologist and Expert in natural resources, infrastructure and sustainable development 
         </p>
@@ -22,50 +22,65 @@
         </p>
         
         <div class="resos">
-          <Reseau/>
+          <Reseau
+            linkedin="width:3vw;height:2.8vw;margin-left:1vw;margin-top:-0.6vw;"
+            mail="width:3.3vw;border: 1px solid transparent;height:2.2vw;margin-left:1.3vw"
+            call="width:2.8vw;height:2.3vw;margin-left:1.3vw"
+            numcol="color:white;font-size:1.9vw;margin-left:1.3vw;font-weight: 600;font-family:Roboto,sans-serif"           
+          />
+         
+        </div>
+        <div class="respo">
+          <Resmobile numcol="color:white;"  />
         </div>
         
      
       </div>
       
-
-      <div class="col-12 col-lg-6 col-md-6 image-part">
-      <img src="../assets/Avsb.png" class="phd-image" alt="">
+      <div data-aos="zoom-in" data-aos-duration="2000" class="image-part">
+      <img  src="../assets/Avsb.png" class="phd-image" alt="">
        </div>
 
       </div>
-      
-    
   
-
 </section>
   </template>
   
   <script>
 import Reseau from './Reseau.vue';
+import Resmobile from './Resmobile.vue';
+// import Mixins from '../pages/Mixins.vue'
 export default{
-    name: "Phden",
+    // mixins: [Mixins],
+    name: "Phd",
     props:["qsjlink"],
-    components: { Reseau }
+    components: { Reseau, Resmobile }
 }
   
   
   </script>
   
   <style >
+  
+  /* ********* */
  #section0{
   width: 100%;
   margin-top: 1vw;
+  font-family: 'Roboto',sans-serif;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
+  background: url('../assets/background.svg');
+  background-size: auto;
  }
+
  .degr{
   width: 85.35vw;
+  display: flex;
   height: auto;
   padding-bottom: 5.5vw;
   margin-top: 8.5vw;
   margin-left: 6.4vw;
-  background: transparent;
+ 
  }
  .text-part{
         margin-top:0vw;
@@ -73,6 +88,7 @@ export default{
         padding-right: 0vw;
         padding-bottom: 0vw;
         margin-left: 0vw;
+        width: 44vw;
         height: auto;
       }
  .image-part{
@@ -110,13 +126,17 @@ export default{
  .qsj-link{
   padding: 0.6vw 2vw;
   border-radius: 1.43vw;
- 
+  
   font-size: 1.5vw;
  
   font-weight: 600;
   list-style: none;
   color: rgba(2, 56, 137, 1);
   background: #FFFFFF;
+ }
+ .qsj-link a{
+  text-decoration: none;
+  color: rgba(2, 56, 137, 1);
  }
  .pqsj{
     margin-top: 3.5vw;
@@ -125,32 +145,42 @@ export default{
   margin-top: 4.2vw;
   margin-left: 7.5vw;
  }
+ .respo{
+  display: none;
+ }
  .resos img{
   margin-left: 0.6vw;
  }
 
  /* *********RESPONSIVE PART********** */
  @media screen and (max-width:768px) {
-    .degr{
+  
+  #section0{ 
+  }  
+  .degr{
         flex-direction: column;
-        width: 98vw;
+        width: 100%;
         margin-left: -1vw;
-        /* border: 1px solid black; */
+        background: rgba(2, 56, 137, 1);
       }
       .image-part{
       height: 110vw;
-      width: 100vw;
-      /* border: 1px solid black; */
+      width: 100%;
       position: absolute;
-      margin-left: -1.9vw;
-      margin-top: 0vw;
+      margin-left: -1.7vw;
+      margin-top: 3vw;
+     
+     
       }
       .text-part{
-        margin-top: 102vw;
+        margin-top: 116vw;
         padding-left: 12vw;
         padding-right: 12vw;
+        padding-top: 3vw;
         padding-bottom: 9vw;
-        margin-left: -01.8vw;
+        margin-left: 1vw;
+        /* width: 100vw; */
+        width: auto;
         background: url('../assets/background.svg');
       }
       .titre-occ{
@@ -165,7 +195,7 @@ export default{
       }
       .slogan{
         font-size: 4.9vw;
-        line-height: 2.25vw;
+        line-height: 6vw;
       }
       .qsj-link{
         padding: 1.3vw 2vw;
@@ -173,11 +203,16 @@ export default{
         font-size: 3.5vw;
       }
       .resos{
+        display: none;
         margin-top: 9.2vw;
         margin-left: 0vw;
       }
       .resos img{
         margin-left: 4vw;
+      }
+      .respo{
+        display: block;
+        margin-top: 14vw;
       }
  }
 

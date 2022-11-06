@@ -10,7 +10,7 @@
        
        <div class="tech-liste">
           
-           <ul v-for="(manage, index) in manager" :key="index" :style="listyle" class="techliste">
+           <ul v-for="(manage, index) in manager" :key="index" :style="index" class="techliste">
             <img src="../assets/listepara.png" class="li-img" alt="">
              <li  class="li-tech">       
               <span>{{manage}}</span> 
@@ -51,13 +51,11 @@ export default {
    background: rgb(255, 255, 255);
    border: 2px solid #E4E3E3;
     box-shadow: 1vw;
-    z-index: 0;
+    transition: transform 0.5s ease-out;
 
 }
 .technique:hover{
-   transform: scale(1.2);
-    transition: 2s ease-in-out;
-    z-index: 7;
+   transform: scale(1.1);
 }
 .comptech{
    margin-left: 9vw;

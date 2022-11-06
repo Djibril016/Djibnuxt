@@ -5,7 +5,9 @@ import 'aos/dist/aos.css'
 export default {
     name:"Mixins",
   mounted() {
-    AOS.init({ })
+    AOS.init({ 
+      disable: 'mobile'
+    })
   }
 }
 </script>

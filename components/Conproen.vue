@@ -2,7 +2,7 @@
     <div>
          <div class="conteneur">
        
-            <div data-aos="fade-right" data-aos-duration="2000" class=" col-12 col-md-5 col-lg-6 pt-5 niveau">
+            <div data-aos="fade-right" data-aos-duration="2000" class="  niveau">
         <slot name="date" class="date">la date de debut de formation </slot> <br>
         <slot name="annee" class="mt-2 annee">l'annee de db de formation</slot><br>
     
@@ -10,7 +10,7 @@
    
         <PointForm class="pointform"/>
     
-      <div data-aos="fade-left" data-aos-duration="2000"  class="col-12 col-md-6 col-lg-6 pt-5 serie">
+      <div data-aos="fade-left" data-aos-duration="2000"  class=" serie">
         <div class="niv">
             <slot name="matiere" class="filiere">la matiere</slot> <br>
         <slot name="mention" > la mention</slot>
@@ -59,7 +59,6 @@ import PointForm from './PointForm.vue';
           line-height: 1.95vw;
           padding-left: 0;
           margin-left: 4vw;
-          width: 35vw;
       }
       
       .filiere{
@@ -73,7 +72,7 @@ import PointForm from './PointForm.vue';
     text-align: right;
     padding-left: 0;
     margin-right: 3vw;
-    width: 40vw;
+    width: 35vw;
       }
 
       .pointform{

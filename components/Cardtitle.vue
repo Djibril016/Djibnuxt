@@ -23,6 +23,7 @@
     margin-top: 2.0vw;
     position: relative;
     text-align: center;
+    font-family: 'Roboto',sans-serif;
     border-radius: 0px;
     color: rgba(2, 56, 137, 1);
     font-size: 2.9vw;

@@ -1,19 +1,19 @@
 <template> 
-<section id="formations">
-  <Cardtitle titre="Education and honors" class="form-title" position="margin-left:-74.5vw;margin-top:5vw;width:63.3%"/>
+<div id="formations">
+  <Cardtitle titre="Education and honors" class="text-center form-title" position="margin-left:-74.5vw;margin-top:5vw;width:63.3%"/>
 
-  <div class="formill">
+  <div  data-aos="zoom-in" data-aos-duration="3000"  class="formill">
 <img src="../assets/Formationill.svg" alt="" >
   </div>
     
 
-  <div class="row conteneur ">
+  <div class="conteneur-form ">
      
-     <div class="col-12 col-md-12 col-lg-12 contex ">
+     <div data-aos="fade-right" data-aos-duration="3000" class=" contex ">
          <TitreRubriq rubrique="EDUCATION"/>
      </div>
-       <div class="col-11 col-md-12 col-lg-12">
-         <ContFormEn/>
+       <div class=" formcont">
+         <Formconten/>
        </div>
 
        <div class="distinct">
@@ -23,28 +23,26 @@
 
      </div>
      <div id="leadership-offset"></div>
-</section>
+</div>
 
   
 </template>
 
   <script>
-  import Point from './point.vue';
   import Cardtitle from './Cardtitle.vue';
-import TitreRubriq from './TitreRubriq.vue';
-import PointForm from './PointForm.vue';
-import ContFormEn from './ContFormEn.vue';
-import DistinctionEn from './DistinctionEn.vue';
+  import TitreRubriq from './TitreRubriq.vue';
+  import Formconten from './Formconten.vue';
+  import DistinctionEn from './DistinctionEn.vue';
        export default {
-        name:"Formation",
-          components:{ Point, Cardtitle, TitreRubriq, PointForm, ContFormEn, DistinctionEn },
+        name:"FormationEn",
+          components:{ Cardtitle, TitreRubriq, Formconten, DistinctionEn },
         }
 </script>
 <style scoped>
 #leadership-offset{
-  height: 3.5vw;
+  padding: 3.5vw;
 }
-.conteneur{
+.conteneur-form{
   margin: 0%;
   padding-left: 1%;
 }
@@ -52,13 +50,18 @@ import DistinctionEn from './DistinctionEn.vue';
   width: 100%;
   margin-top: 19.5%;
 }
+.formcont{
+  margin-top: 4%;
+}
 .form-title{
-  padding-left: 2vw;
+  padding-left: 1vw;
 }
   .formill{
     position: absolute;
-    margin-top: 2vw;
-    margin-left: 44.5vw;
+    margin-top: 1vw;
+    margin-left: 46.5vw;
+    height: 26vw;
+    width: 43vw;
    
   }
   .formill img{
@@ -66,20 +69,28 @@ import DistinctionEn from './DistinctionEn.vue';
     height: 100%;
   }
 
+
   @media screen and (max-width:768px){
-    
-    .conteneur{
-      margin-top: 30%;
+    #formations{
+      margin-top: 7vw;
+      width: 100%;
+    }
+    .form-title{
+      width: auto;
+    }
+    .conteneur-form{
+      margin-top: 58vw;
       padding-left: 1%;
     }
     .distinct{
-      margin-top: 16vw;
+      margin-top: 22vw;
     }
     .formill{
     position: absolute;
     margin-top: 2vw;
-    margin-left: 30.5vw;
-    width: 65vw;
+    margin-left: 15vw;
+    width: 75vw;
+    height: 60vw;
   }
   }
 </style>

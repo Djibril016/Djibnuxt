@@ -1,6 +1,7 @@
 <template>
-    <section id="distinctions">
-         <div class="col-12 col-md-12 col-lg-12 contex ">
+    <div id="distinctions">
+         <div class=" contex ">
+            <!-- col-12 col-md-12 col-lg-12 -->
          <TitreRubriq data-aos="fade-right" data-aos-duration="2000" rubrique="DISTINCTIONS" />
      </div>
      <div v-for="(type, index) in typemedaille" :key="index"
@@ -19,15 +20,15 @@
         </div>
 
      </div>
-    </section>
+    </div>
      
 </template>
 
 <script>
-    import Mixins from '../pages/Mixins.vue'
+    // import Mixins from '../pages/Mixins.vue'
     import TitreRubriq from './TitreRubriq.vue';
     export default{
-        mixins:[Mixins],
+        // mixins:[Mixins],
         name:"Distinction",
         components:{
             TitreRubriq
@@ -66,12 +67,13 @@
 <style>
 #distinctions{
     width: auto;
+    color:  rgba(1, 52, 128, 1);;
 }
 .div-medaille{
     display: flex;
     flex-direction: row;
     margin-left: 11vw;
-    margin-top: 3.3vw;
+    margin-top: 2.5vw;
 }
 .div-medaille img{
     height: 3.5vw;

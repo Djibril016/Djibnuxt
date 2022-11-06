@@ -91,7 +91,7 @@ section{
       }
       
       .serie{
-         /* margin-left: 10vw; */
+         text-transform: uppercase;
           font-size: 1.2vw;
           position: relative;
           line-height: 1.95vw;

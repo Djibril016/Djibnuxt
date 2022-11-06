@@ -2,6 +2,7 @@
     <div class="col-1 col-md-1 col-lg-1 pt-5 zone-point">
           <div class="tiret"></div>
           <div class="point"></div>
+          
         </div> 
 </template>
 
@@ -39,9 +40,17 @@ export default {
         margin-left: -8vw;
     }
     .point{
-      height: 3.8vw;
-      width: 4.66vw;
+      height: 3.66vw;
+      width: 3.66vw;
       border-radius: 1vw;
     }
+    .tiret{
+      position: absolute;
+      margin: 0 38%;
+      top: 0px;
+      height: 90%;
+      
+  }
+  
   }
 </style>

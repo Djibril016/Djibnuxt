@@ -14,6 +14,7 @@
   .our-names{
     padding: 0.7vw;
     background-color: #E4E3E3;
+    font-family: 'Roboto',sans-serif;
   }
   .sign{
     font-size: 1.8vw;

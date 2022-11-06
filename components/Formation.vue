@@ -1,5 +1,5 @@
 <template> 
-<section id="formations">
+<div id="formations">
   <Cardtitle titre="FORMATION ET DISTINCTIONS" class="form-title" position="margin-left:-74.5vw;margin-top:5vw;width:63.3%"/>
 
   <div  data-aos="zoom-in" data-aos-duration="3000"  class="formill">
@@ -7,13 +7,13 @@
   </div>
     
 
-  <div class="row conteneur ">
+  <div class="conteneur-form ">
      
-     <div data-aos="fade-right" data-aos-duration="3000" class="col-12 col-md-12 col-lg-12 contex ">
+     <div data-aos="fade-right" data-aos-duration="3000" class=" contex ">
          <TitreRubriq rubrique="FORMATION"/>
      </div>
-       <div class="col-11 col-md-12 col-lg-12">
-         <ContForm/>
+       <div class=" formcont">
+         <FormCont/>
        </div>
 
        <div class="distinct">
@@ -23,30 +23,27 @@
 
      </div>
      <div id="leadership-offset"></div>
-</section>
+</div>
 
   
 </template>
 
   <script>
-  import Point from './Point.vue';
   import Cardtitle from './Cardtitle.vue';
 import TitreRubriq from './TitreRubriq.vue';
 import PointForm from './PointForm.vue';
-import ContForm from './ContForm.vue';
+import FormCont from './FormCont.vue';
 import Distinction from './Distinction.vue';
-import Mixins from '../pages/Mixins.vue'
        export default {
-        mixins: [Mixins],
         name:"Formation",
-          components:{ Point, Cardtitle, TitreRubriq, PointForm, ContForm, Distinction },
+          components:{ Cardtitle, TitreRubriq, PointForm, FormCont, Distinction },
         }
 </script>
 <style scoped>
 #leadership-offset{
-  height: 3.5vw;
+  height: 5vw;
 }
-.conteneur{
+.conteneur-form{
   margin: 0%;
   padding-left: 1%;
 }
@@ -54,15 +51,18 @@ import Mixins from '../pages/Mixins.vue'
   width: 100%;
   margin-top: 19.5%;
 }
+.formcont{
+  margin-top: 4%;
+}
 .form-title{
   padding-left: 2vw;
 }
   .formill{
     position: absolute;
     margin-top: 1vw;
-    margin-left: 44.5vw;
-    height: 28vw;
-    width: 45vw;
+    margin-left: 46.5vw;
+    height: 26vw;
+    width: 43vw;
    
   }
   .formill img{
@@ -70,20 +70,29 @@ import Mixins from '../pages/Mixins.vue'
     height: 100%;
   }
 
+
   @media screen and (max-width:768px){
-    
-    .conteneur{
-      margin-top: 30%;
+    #formations{
+      width: 100%;
+      
+    }
+    .form-title{
+      
+      width: auto;
+    }
+    .conteneur-form{
+      margin-top: 58vw;
       padding-left: 1%;
     }
     .distinct{
-      margin-top: 16vw;
+      margin-top: 22vw;
     }
     .formill{
     position: absolute;
     margin-top: 2vw;
-    margin-left: 30.5vw;
-    width: 65vw;
+    margin-left: 15vw;
+    width: 75vw;
+    height: 60vw;
   }
   }
 </style>

@@ -20,7 +20,9 @@ export default {
       z-index: 1;
   }
   .point img{
-    margin-left: -0.1vw;
+    margin-left: -0.4vw;
+    height: 2.5vw;
+    width: 2.5vw;
   }
   .zone-point{
       position: relative;
@@ -45,6 +47,11 @@ export default {
       height: 3.66vw;
       width: 3.66vw;
       border-radius: 1.3vw;
+  }
+  .point img{
+    margin-left: -0.4vw;
+    height: 5vw;
+    width: 5vw;
   }
   .tiret{
     height: 110%;

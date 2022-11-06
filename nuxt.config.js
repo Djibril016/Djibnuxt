@@ -11,11 +11,12 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {rel:"stylesheet", href:'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css'},
       { rel:'stylesheet', type:'font', href:'https://fonts.google.com/specimen/Montserrat?query=montser'},
       { rel:'stylesheet', type:'font', href:'https://fonts.google.com/specimen/Poppins?query=poppins'},
+      { href:'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js'},
       { rel: 'icon', type: 'pages', href: '../pages/English.vue' },
     ],
+  
     
   },
   /*
@@ -28,15 +29,7 @@ module.exports = {
  /*
  ** Global css
  */
- css:[
-    '@/assets/css/bootstrap.min.css'
- ],
- js:[
-  '@/assets/css/bootstrap.js'
-],
-fontawesome:[
-  '@/assets/css/solid.min.css'
-],
+
 
   build: {
     /*
@@ -56,22 +49,22 @@ fontawesome:[
     buildModules: [
     '@nuxtjs/google-fonts'
   ],
-  modules: [
-    '@nuxtjs/axios',
-    ['nuxt-mail', {
-      message: {
-        to: 'dndiaye389@gmail.com',
-      },
-      smtp: {
-        host:"smtp.mailtrap.io",
-        port: 2525,
-        auth: {
-          user: 'dndiaye389@gmail.com',
-          pass: 'password'
-        },
-      },
-    }],
-  ],
+  // modules: [
+  //   '@nuxtjs/axios',
+  //   ['nuxt-mail', {
+  //     message: {
+  //       to: 'dndiaye389@gmail.com',
+  //     },
+  //     smtp: {
+  //       host:"smtp.mailtrap.io",
+  //       port: 2525,
+  //       auth: {
+  //         user: 'dndiaye389@gmail.com',
+  //         pass: 'ndiayedjibril13'
+  //       },
+  //     },
+  //   }],
+  // ],
   googleFonts: {
     families: {
       Roboto: true,

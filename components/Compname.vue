@@ -1,6 +1,6 @@
 <template>
     <div class="tit">
-        <span class="man-title">{{comptitle}}</span> 
+        <span >{{comptitle}}</span> 
     </div>
     
 </template>
@@ -18,23 +18,24 @@
         height: 3vw;
         font-size: 2vw;
         border-radius: 0.5vw;
-        padding: 0vw 3vw;
+        font-family: 'Roboto',sans-serif;
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        padding-top: 0.4rem;
     }
-    .man-title{
-    text-align: center;
-    color: white;
-    font-family: 'Roboto',sans-serif;
-    font-weight: 700;
-}
+   
 
 @media screen and (max-width:768px) {
     .tit{
         text-align: center;
-        font-size: 4vw;
+        font-size: 4.6vw;
+        border-radius: 2vw;
         width: 45vw;
         height: 8vw;
-        padding: 1vw 6vw;
+        padding-top: 3vw;
     }
+  
    
 }
 </style>

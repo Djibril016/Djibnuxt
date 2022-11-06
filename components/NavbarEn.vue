@@ -5,8 +5,8 @@
 <a class="navbar-brand" href="#"><b class="name">Dr Arnaud Yémalin ZANNOU</b></a>
 
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon "></span>
-<span><img src="" alt=""></span>
+
+<span><img src="../assets/navb.svg" alt=""></span>
 </button>
 
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -20,23 +20,20 @@
 
 <form class="form-inline my-2 my-lg-0">
   <div class="dropdown langage">
-    <button type="button" class="dropdown-toggle text-white" id="dropdownmenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <a href=""> Fr </a>
+    <button type="button">
+      <nuxt-link to="/" class=" text-white"> Fr </nuxt-link>
     </button> 
-    <div class="dropdown-menu" aria-labelledby="dropdownmenuButton">
-      <a class="dropdown-item" href="#"> En </a>
-    </div>
+    
   </div>
       
                
 </form> 
 
-<dpb/> 
-
-
 </div>
 
 </nav>
+<br>
+
     </section>
 </template>
 
@@ -69,6 +66,7 @@
            ]
         }
       },
+      
       mounted() {
       this.$nextTick(function(){
         window.addEventListener("scroll", function(){
@@ -92,7 +90,7 @@
 
 <style>
 
-nav {
+/* nav {
   padding: 1rem;
   transition: all 0.5s;
   background: transparent;
@@ -116,7 +114,7 @@ nav.shrink {
     display: flex;
     width:  70%;
     /* padding-left: 2vw; */
-    margin-top: 0.3vw;
+    /* margin-top: 0.3vw;
     margin-left: 5vw;
   }
   #nav-link{
@@ -143,9 +141,9 @@ nav form{
   font-weight: 600;
   border-radius: 0.3vw;
   background: rgba(2, 56, 137, 1);
-  border: 0px;
-}
-@media screen and (max-width:768px){
+  border: 0px; 
+} */
+/* @media screen and (max-width:768px){
     .navbar-toggler{
     margin-right: 4vw;
     }  
@@ -163,5 +161,6 @@ nav form{
     font-size: 4.7vw;
     margin-left: 1.25vw;
 }
-}
+} */
+
 </style>

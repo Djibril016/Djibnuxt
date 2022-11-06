@@ -116,10 +116,10 @@
 </template>
 
 <script>
-import Mixins from '../pages/Mixins.vue';
+// import Mixins from '../pages/Mixins.vue';
 import Cardtitle from './Cardtitle.vue';
     export default{
-        mixins:[Mixins],
+        // mixins:[Mixins],
         name:"Leadership",
         components:{ Cardtitle },
         data(){

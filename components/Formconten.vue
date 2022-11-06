@@ -1,21 +1,24 @@
 <template>
     <div class="contpro">
-         <Conpro >
+           
+     <!-- DOCTORATE      -->
+         <Conproen >
         <template v-slot:date>
-            <span>DOCTORAT (Ph.D)</span>
+            <span>DOCTORATE (PhD)</span>
         </template>
         <template v-slot:annee>
             <span>2011</span>
         </template>
         <template v-slot:matiere>
-            <span>EN HYDROLOGIE ET GESTION INTEGRÉE DES RESSOURCES EN EAU</span>
+            <span>In Hydrology and Integrated Water Resources Management</span>
         </template>
         <template v-slot:mention>
-            <span>(MENTION TRÈS HONORABLE AVEC FÉLICITATIONS DU JURY)</span>
+            <span>(VERY HONORABLE mention with congratulations from the Jury)</span>
         </template>
-    </Conpro>
+    </Conproen>
 
-    <Conpro>
+        <!-- MASTER -->
+    <Conproen>
         <template v-slot:date>
             <span>MASTER</span>
         </template>
@@ -23,57 +26,60 @@
             <span>2006</span>
         </template>
         <template v-slot:matiere>
-            <span>EN EAU ET ENVIRONNEMENT</span>
+            <span>In Water resources and Environment</span>
         </template>
         <template v-slot:mention>
-            <span>(MENTION BIEN)</span>
+            <span>(MENTION WELL)</span>
         </template>
-    </Conpro>
+    </Conproen>
 
-    <Conpro>
+    <!-- DIPLOMA AGRONOMIC -->
+    <Conproen>
         <template v-slot:date>
-            <span>DIPLÔME D’INGÉNIEUR AGRONOME</span>
+            <span>DIPLOMA OF AGRONOMIC ENGINEER</span>
         </template>
         <template v-slot:annee>
             <span>2004</span>
         </template>
         <template v-slot:matiere>
-            <span>EN SPÉCIALITÉ HYDRAULIQUE, EAUX ET FÔRETS, GÉNIE <br> ET AMÉNAGEMENT RURAL</span>
+            <span>Speciality : Hydraulics, Water and Forests, Rural <br> Land planning and Engineering</span>
         </template>
         <template v-slot:mention>
-            <span>(TRÈS BIEN AVEC FÉLICITATIONS DU JURY)</span>
+            <span>(Mention VERY WELL with congratulations from the Jury)</span>
         </template>
-    </Conpro>
+    </Conproen>
 
-    <Conpro>
+    <!-- BACHELOR’s DEGREE -->
+    <Conproen>
         <template v-slot:date>
-            <span >DIPLÔME D’ÉTUDES UNIVERSITAIRES DU PREMIER CYCLE  (DEUPC)</span>
+            <span >BACHELOR’s DEGREE  (DEUPC)</span>
         </template>
         <template v-slot:annee>
             <span>2001</span>
         </template>
         <template v-slot:matiere>
-            <span>EN SCIENCES DE LA VIE ET DE LA TERRE</span>
+            <span>In Life and Earth Sciences </span>
         </template>
         <template v-slot:mention>
-            <span>(MENTION BIEN)</span>
+            <span>(Mention well)</span>
         </template>
-    </Conpro>
-    <Conpro>
+    </Conproen>
+
+   <!-- BACCALAUREATE -->
+    <Conproen>
         <template v-slot:date>
-            <span>BACCALAURÉAT</span>
+            <span>BACCALAUREATE DEGREE</span>
         </template>
         <template v-slot:annee>
             <span>1998</span>
         </template>
         <template v-slot:matiere>
-            <span>SÉRIE « C » (MATHÉMATIQUES ET SCIENCES PHYSIQUES)</span>
+            <span>“C” SERIES (Mathematics and physical sciences)</span>
         </template>
         <template v-slot:mention>
-            <span>(MENTION BIEN)</span>
+            <span>(MENTION WELL)</span>
         </template>
-    </Conpro>
-
+    </Conproen>
   
     </div>
    
@@ -81,10 +87,10 @@
 </template>
 
 <script>
-    import Conpro from './Conpro.vue';
+    import Conproen from './Conproen.vue';
     export default{
     name: "Formcont",
-    components: { Conpro }
+    components: { Conproen }
 }
 </script>
 

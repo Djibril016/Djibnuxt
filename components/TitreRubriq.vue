@@ -14,19 +14,22 @@ export default{
 
 <style>
 .context {
-    display: inline-flex;
+    display: flex;
     margin-right: 38%;
     margin-top: 4vw;
+    font-family: 'Roboto',sans-serif;
+    color:  rgba(1, 52, 128, 1);
 }
 .rubrique{
     margin-left: 10vw;
-    font-size: 2.3vw;
+    font-size: 2.5vw;
  }
  .direction{
     margin-left: 5vw;
     position: absolute;
-    height: 2.8vw;
-    width: 2.2vw;
+    margin-top: 2.3vw;
+    height: 3.3vw;
+    width: 2.5vw;
  }
 
  @media screen and (max-width:768px) {
@@ -36,6 +39,7 @@ export default{
     .direction{
     margin-left: 3vw;
     position: absolute;
+    margin-top: 5vw;
     height: 4.8vw;
     width: 4.2vw;
  }
