@@ -45,18 +45,19 @@ module.exports = {
         })
       }
     },
-    // vendor: ["aos"],
+
     buildModules: [
     '@nuxtjs/google-fonts'
   ],
+
   modules: [
     '@nuxtjs/axios',
-      'nuxt-protected-mailto',
-],
+    'nuxt-protected-mailto',
+  ],
 
 mail: {
   message: {
-    to: 'jharold613@gmail.com',
+    to: 'dndiaye389@gmail.com',
   },
   smtp: {
     host: "smtp.example.com",
@@ -77,6 +78,14 @@ mail: {
   //     },
   //   }],
   // ],
+  build: {
+    html: {
+      minify: {
+        decodeEntities: false
+      }
+    }
+  },
+
   googleFonts: {
     families: {
       Roboto: true,

@@ -7,12 +7,12 @@
 
         <div class="leader-content">
             <!-- *****Premiere illustration**** -->
-            <div class="firstill">
+            <div data-aos="zoom-in" data-aos-duration="2000" class="firstill">
                 <img src="../assets/echelle.svg"  alt="">
             </div>
 
             <!-- *****PREMIERE BOITE******* -->
-            <div class="boite" id="org">
+            <div data-aos="fade-right" data-aos-duration="2000" class="boite" id="org">
 
                 <div class="icon">
                     <img src="../assets/organisation.svg" alt="" >
@@ -36,7 +36,7 @@
            
             <!-- *****DEUXIEME BOITE******* -->
              
-            <div class="boite" id="resp">
+            <div data-aos="zoom-in" data-aos-duration="2000" class="boite" id="resp">
                 
                 <div class="icon"> 
                 <img src="../assets/responsabilite.svg" alt="" >
@@ -61,7 +61,7 @@
 
              <!-- *****TROISIEME BOITE******* -->
                  
-            <div class="boite" id="voc">
+            <div data-aos="fade-right" data-aos-duration="2000" class="boite" id="voc">
                 <div class="icon">
                     <img src="../assets/vocation.svg" alt="" >
                 </div>
@@ -85,7 +85,7 @@
              <!-- *****QUATRIEME BOITE******* -->
             
                  
-            <div class="boite" id="dom">
+            <div data-aos="fade-up" data-aos-duration="2000" class="boite" id="dom">
                 <div class="icon">
                 <img src="../assets/domain.svg" alt="">
                 </div>
@@ -105,7 +105,7 @@
                 
             </div>
             </div>
-           <div class="leadtirage"> 
+           <div data-aos="zoom-in" data-aos-duration="2000" class="leadtirage"> 
            <img src="../assets/leadtirage.svg" alt="">
         </div>
 

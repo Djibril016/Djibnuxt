@@ -14,7 +14,7 @@
 
                     <textarea name="message" id="" v-model="message" class=" textarea" cols="10" rows="10" placeholder="Message"></textarea>                    
                     
-                    <Mailto :mail="email" :subject="objet" :body="message + '\n\n' + nom" title="envoyer">
+                    <Mailto :mail="destinataire" :subject="objet" :body="message + '\n\n' + nom" title="envoyer">
                       <button type="button" id="button" @click="send(instance)" class="form-control button">Send</button>
                     </Mailto>
 
@@ -243,7 +243,10 @@ form{
   form{
     width: 78vw;
   }
-
+  form input{
+    font-size: 4vw;
+    padding: 2vw 2vw;
+  }
    .coordonne{
     padding-left: 2%;
     flex-direction: column;

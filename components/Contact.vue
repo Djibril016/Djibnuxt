@@ -191,7 +191,7 @@ textarea,
 .objet:focus,
 textarea:focus {
   outline: 1px solid rgba(232, 96, 48, 1);
-  font-size: 4vw;
+  font-size: 1vw;
   color: rgb(7, 7, 29);
 
 }
@@ -298,7 +298,7 @@ textarea:focus {
   }
   form input{
     font-size: 4vw;
-    color: green;
+    padding: 2vw 2vw;
   }
   .coordonne {
     padding-left: 2%;
