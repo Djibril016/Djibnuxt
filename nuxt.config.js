@@ -49,8 +49,20 @@ module.exports = {
     buildModules: [
     '@nuxtjs/google-fonts'
   ],
-  // modules: [
-  //   '@nuxtjs/axios',
+  modules: [
+    '@nuxtjs/axios',
+      'nuxt-protected-mailto',
+],
+
+mail: {
+  message: {
+    to: 'jharold613@gmail.com',
+  },
+  smtp: {
+    host: "smtp.example.com",
+    port: 587,
+  },
+},
   //   ['nuxt-mail', {
   //     message: {
   //       to: 'dndiaye389@gmail.com',
